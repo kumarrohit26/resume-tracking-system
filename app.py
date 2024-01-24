@@ -87,7 +87,7 @@ the job description. First the output should come as percentage and then keyword
 
 if submit1:
     if uploaded_file is not None:
-        pdf_content=input_pdf_text(uploaded_file)
+        pdf_content=input_pdf_setup(uploaded_file)
         response=get_response(input_prompt1,pdf_content,input_text)
         st.subheader("The Repsonse is")
         st.write(response)
@@ -96,7 +96,7 @@ if submit1:
 
 elif submit4:
     if uploaded_file is not None:
-        pdf_content=input_pdf_text(uploaded_file)
+        pdf_content=input_pdf_setup(uploaded_file)
         response=get_response(input_prompt3,pdf_content,input_text)
         st.subheader("The Repsonse is")
         st.write(response)
